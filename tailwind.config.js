@@ -6,10 +6,13 @@ module.exports = {
       center: true,
       padding: '16px'
     },
-    upper:{
-      
+    upper: {
+
     },
     extend: {
+      screens: {
+        'fsm': '480px'
+      },
       colors: {
         'custom-blue': '#3366FF',
         'hijau': '#14b8a6'
