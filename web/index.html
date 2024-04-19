@@ -45,7 +45,8 @@
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-4 lg:w-1/2">
                         <h1 class="text-base font-semibold text-hijau md:text-xl">Halo semua 👋, Saya
-                            <span class="block font-bold text-4xl text-gray-800">Ivantheo Rizky Putra</span>
+                            <span class="block font-bold text-4xl text-gray-800">I<span
+                                    id="nama">vantheo_Rizky_Putra</span></span>
                         </h1>
                         <h2 class="font-medium text-slate-700 text-lg mb-5">Student &
                             <span class="text-gray-800">Creator bot</span>
@@ -322,6 +323,20 @@
             let el = document.getElementById('waktu')
             el.innerText = `${jam}:${menit}:${detik}`
         }, 1000)
+        async function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        let idnama = document.getElementById("nama")
+        let nama = "vantheo_Rizky_Putra"
+        setInterval(async () => {
+            for (let i = 0; i < nama.length; i++) {
+                if (idnama.innerText == nama) {
+                    idnama.innerText = ''
+                }
+                await delay(500)
+                idnama.innerText += nama[i]
+            }
+        }, nama.length * 1000);
     </script>
 </body>
 
