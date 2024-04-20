@@ -52,7 +52,7 @@
                             <span class="text-gray-800">Creator bot</span>
                         </h2>
                         <p class="font-medium text-slate-700 mb-10">mempunyai asisten di whatsapp membantu bukan?, <span
-                                class="font-bold text-gray-800">yoiii!</span></p> 
+                                class="font-bold text-gray-800">yoiii!</span></p>
                     </div>
                     <div class="w-full self-end px-4 lg:w-1/2">
                         <div class="relative mt-10 md:mt-9 lg:right-0">
@@ -321,7 +321,7 @@
             let menit = waktu.getMinutes();
             let detik = waktu.getSeconds();
             let el = document.getElementById('waktu')
-            el.innerText = `${jam}:${menit}:${detik}`
+            el.innerText = `${jam}:${menit < 10 ? `0${menit}` : `${menit}`}:${detik}`
         }, 1000)
         async function delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
