@@ -825,6 +825,10 @@ video {
   padding-top: 9rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -857,6 +861,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -979,6 +988,11 @@ video {
   .fsm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .fsm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
